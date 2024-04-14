@@ -50,7 +50,7 @@ Commands:
 
 - create a ns
 
-`k create ns final`
+ `k create ns final`
 
 
 - Imagepull secret to pull ECR image
@@ -85,17 +85,3 @@ Add AWS academy temporary credentials in secrets folder.
 - `kubectl apply -f configmap.yaml`
 - `kubectl apply -f deployment.yaml`
 - `kubectl apply -f service.yaml`
-
-## App
-
-Configmap for bg image URL
-Secrets for AWS credentails to allow s3 private bucket access
-Imagepull secret to pull ECR image
-Deployment of Flask application with 1 replica
-Service that exposes the Flask application to the Internet users and has a stable endpoint
-
-
-
-
-Create serviceaccount named “clo835”
-K8s role (Role or ClusterRole, whichever is appropriate) “CLO835” with permissions to create and read namespaces. Create a binding (RoleBinding or ClusterRoleBinding, whichever appropriate) that binds the “CLO835” role to the clo835 serviceaccount.
